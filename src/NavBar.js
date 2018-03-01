@@ -36,13 +36,12 @@ class NavBar extends React.Component {
       <div>
         <Navbar color="faded" light expand="md" className='Navback'>
             <Nav className="" navbar>
-             <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
              	<DropdownButton />
              	<NavItem className='title'>
     				    GAZETI
-    			    </NavItem>    
-    		</div>
-              
+    			    </NavItem>     
+          		</div>          
             </Nav>
         </Navbar>
       </div>
