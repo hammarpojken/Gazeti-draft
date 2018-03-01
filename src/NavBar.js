@@ -12,7 +12,10 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  DropdownItem,
+  Button,
+  Input
+ } from 'reactstrap';
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -29,7 +32,6 @@ class NavBar extends React.Component {
     });
   }
   render() {
-  	console.log('navbar')
     return (
       <div>
         <Navbar color="faded" light expand="md" className='Navback'>
@@ -37,8 +39,8 @@ class NavBar extends React.Component {
              <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
              	<DropdownButton />
              	<NavItem className='title'>
-    				GAZETI
-    			</NavItem>
+    				    GAZETI
+    			    </NavItem>    
     		</div>
               
             </Nav>

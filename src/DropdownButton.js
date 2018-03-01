@@ -23,9 +23,8 @@ export default class Dropdown extends React.Component {
       <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle className='b'>
         <span className="navbar-toggler-icon b"></span>
-          
-        </DropdownToggle>
-        <DropdownMenu>
+        </DropdownToggle> 
+        <DropdownMenu className='dropdown_menu'>
           <DropdownItem header>Categories</DropdownItem>
           <DropdownItem>Local News</DropdownItem>
           <DropdownItem>National News</DropdownItem>
