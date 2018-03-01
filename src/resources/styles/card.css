@@ -1,0 +1,40 @@
+div.card {
+	width: 25rem;
+	border: none;
+
+
+}
+
+.card-body {
+	text-align: left;
+
+
+}
+.card-articleinfo {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1.25rem 0 1.25rem;
+
+}
+.card-articleinfo p, 
+.card-articleinfo img {
+	margin-bottom: 0px;
+	font-style: italic;
+	
+	
+}
+
+.card-avatar {
+	width: 1.75rem;
+	height: 1.75rem;
+	margin-bottom: 1rem;
+
+}
+.card-author {
+	display: flex;
+	margin-bottom: 0px;
+}
+.card hr {
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+}
