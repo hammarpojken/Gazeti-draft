@@ -1,0 +1,8 @@
+
+.profile-icon {
+	width: 2.6rem;
+}
+
+.profile-icon:hover {
+	cursor: pointer;
+}
