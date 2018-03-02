@@ -25,10 +25,10 @@ export default class Dropdown extends React.Component {
   render() {
     return (
       <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle className='button_menu'>
+        <DropdownToggle className='button-menu'>
         <span className="navbar-toggler-icon b"></span>
         </DropdownToggle> 
-        <DropdownMenu className='dropdown_menu'>
+        <DropdownMenu className='dropdown-menu'>
           <DropdownItem header>Categories</DropdownItem>
           <DropdownItem>Local News</DropdownItem>
           <DropdownItem>National News</DropdownItem>
@@ -42,6 +42,9 @@ export default class Dropdown extends React.Component {
           <DropdownItem>Sports</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>My Profile</DropdownItem>
+          <DropdownItem>Publish</DropdownItem>
+          <DropdownItem divider />
+          <DropdownItem>Log Out</DropdownItem>
         </DropdownMenu>
       </ButtonDropdown>
     );

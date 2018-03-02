@@ -1,7 +1,8 @@
-.button_menu.btn {
+.button-menu.btn {
 	background-color: white;
 }
 
-.dropdown_menu:hover {
+.dropdown-menu:hover {
 	cursor: pointer;
 }
+
