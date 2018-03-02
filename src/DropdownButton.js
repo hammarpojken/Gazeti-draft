@@ -1,6 +1,10 @@
 import React from 'react';
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import './DropdownButton.css'
+import { 
+  ButtonDropdown,
+  DropdownToggle,
+  DropdownMenu, 
+  DropdownItem } from 'reactstrap';
+import './resources/styles/DropdownButton.css'
 
 export default class Dropdown extends React.Component {
   constructor(props) {
@@ -21,7 +25,7 @@ export default class Dropdown extends React.Component {
   render() {
     return (
       <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle className='b'>
+        <DropdownToggle className='button_menu'>
         <span className="navbar-toggler-icon b"></span>
         </DropdownToggle> 
         <DropdownMenu className='dropdown_menu'>
