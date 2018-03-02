@@ -1,0 +1,27 @@
+
+.article-preamble p {
+	font-weight: bold;
+}
+
+.modal-dialog {
+	
+	max-width: 64rem;
+
+}
+.modal-body {
+	flex-direction: row;
+}
+
+.modal-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	border: none;
+}
+.modal-article-content {
+	flex-grow: 2;
+}
+
+.modal-info {
+	flex-grow: 0;
+}

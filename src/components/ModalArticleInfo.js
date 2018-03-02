@@ -2,27 +2,26 @@ import React from 'react'
 import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 import userlogo from '../resources/images/userlogo.svg'
-import '../resources/styles/ArticleCard.css'
+import '../resources/styles/ModalArticleInfo.css'
 
 
-const ArticleCard = (props) => {
+const ModalArticleInfo = (props) => {
 	
   return (
-      <Card className='card-article'>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+      <Card className='modal-card-master'>
         <div className='card-articleinfo'>
 			<div className='card-author'>
 				<img src={userlogo} className='card-avatar' />
-				<p className='skribent'>{props.props.name}</p>
+				<p className='skribent'>{}</p>
 			</div>
 			<div className='card-timestamp'>
 				<p className=''>1990-01-01 20:13</p>
 			</div>
 		</div>
         <CardBody>
-          <CardTitle >{props.props.headline}
+          <CardTitle >{}
 			</CardTitle>
-          <CardText>{props.props.about}
+          <CardText>{}
 			</CardText>
          <hr/>
         </CardBody>
@@ -31,7 +30,4 @@ const ArticleCard = (props) => {
     
       )
 }
- export default ArticleCard;
-
-
-
+ export default ModalArticleInfo;
