@@ -1,20 +1,14 @@
 import React from 'react';
-import './NavBar.css';
+import './resources/styles/NavBar.css';
 import DropdownButton from './DropdownButton';
+import ProfileIcon from './ProfileIcon';
+import SearchBar from './SearchBar.js'
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Button,
-  Input
  } from 'reactstrap';
 
 class NavBar extends React.Component {
@@ -34,15 +28,21 @@ class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="faded" light expand="md" className='Navback'>
-            <Nav className="" navbar>
-              <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-             	<DropdownButton />
-             	<NavItem className='title'>
-    				    GAZETI
-    			    </NavItem>     
-          		</div>          
-            </Nav>
+        <Navbar color="faded" light expand="md">
+            <div className='main'>
+              <Nav className="" navbar>
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                 	<DropdownButton />
+                 	<NavItem className='title'>
+        				    GAZETI
+        			    </NavItem> 
+            		</div>                      
+              </Nav>
+            </div>
+            <div className='right-side'>
+              <SearchBar />           
+              <ProfileIcon />
+            </div>
         </Navbar>
       </div>
     );
