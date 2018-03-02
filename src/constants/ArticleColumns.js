@@ -1,12 +1,18 @@
 import React from 'react'
 import {CardColumns} from 'reactstrap'
 import ArticleCard  from './ArticleCard.js'
+import articles from '../articles.js'
 
 const ArticleColumns = (props) => {
-	const b = [<ArticleCard/>, <ArticleCard/>, <ArticleCard/>]
+	const b = articles;
+	let c = [];
+	for(let i = 0; i < b.length; i++) {
+		c.push(<ArticleCard props={b[i]} />);
+	
+	}
 	return(
 		<CardColumns>
-			{b}
+			{c}
 		</CardColumns>
 
 		)

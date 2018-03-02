@@ -1,5 +1,5 @@
-div.card {
-	width: 25rem;
+.card-article {
+	max-width: 30rem;
 	border: none;
 
 
