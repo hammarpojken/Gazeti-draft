@@ -20,7 +20,7 @@ const ArticleCard = (props) => {
 			</div>
 		</div>
         <CardBody>
-          <CardTitle >{props.props.headline}
+          <CardTitle onClick={props.onClick} >{props.props.headline}
 			</CardTitle>
           <CardText>{props.props.about}
 			</CardText>
