@@ -6,3 +6,6 @@
 .modal-card-content {
 	max-width: 40rem;
 }
+.modal-card-img {
+	max-height: 300px;
+}

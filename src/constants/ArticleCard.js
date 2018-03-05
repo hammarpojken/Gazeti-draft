@@ -9,7 +9,7 @@ const ArticleCard = (props) => {
 	
   return (
       <Card className='card-article'>
-        <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+        <CardImg className='articlecard-img' top width="100%" src={props.props.picture + props.props.index * 10} alt="Card image cap" />
         <div className='card-articleinfo'>
 			<div className='card-author'>
 				<img src={userlogo} className='card-avatar' />
@@ -20,7 +20,7 @@ const ArticleCard = (props) => {
 			</div>
 		</div>
         <CardBody>
-          <CardTitle >{props.props.headline}
+          <CardTitle onClick={props.onClick} >{props.props.headline}
 			</CardTitle>
           <CardText>{props.props.about}
 			</CardText>

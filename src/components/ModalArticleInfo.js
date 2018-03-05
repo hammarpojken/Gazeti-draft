@@ -12,7 +12,7 @@ const ModalArticleInfo = (props) => {
         <div className='card-articleinfo'>
 			<div className='card-author'>
 				<img src={userlogo} className='card-avatar' />
-				<p className='skribent'>{}</p>
+				<p className='skribent'>{props.article.name}</p>
 			</div>
 			<div className='card-timestamp'>
 				<p className=''>1990-01-01 20:13</p>

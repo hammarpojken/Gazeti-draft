@@ -8,37 +8,29 @@ import ModalArticleInfo from '../components/ModalArticleInfo.js'
 class ArticleModal extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      modal: true
-    };
-
-    this.toggle = this.toggle.bind(this);
-  }
-
-  toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
   }
 
   render() {
+    
     return (
-          <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-            <ModalHeader toggle={this.toggle}></ModalHeader>
+        <div>
+          <Modal isOpen={this.props.show} toggle={this.props.oncloseModal} className={this.props.className}>
+            <ModalHeader toggle={this.props.oncloseModal}></ModalHeader>
             <ModalBody>
               <div className='modal-wrapper'>
                 <div className='modal-article-content'>
-                  <ModalArticleContent />
+                  <ModalArticleContent article={this.props.article}/>
                 </div>
                 <div className='modal-info'>
-                  <ModalArticleInfo />
+                  <ModalArticleInfo article={this.props.article} />
                 </div>
               </div>
             </ModalBody>
           </Modal>
-      
+        </div>
     );
   }
 }
+
 
 export default ArticleModal;

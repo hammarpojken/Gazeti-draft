@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './resources/styles/App.css';
 import NavBar from './NavBar.js';
 import ModalArticle from './components/ModalArticle.js'						
 import ArticleColumns from './constants/ArticleColumns.js'
@@ -9,8 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavBar /> 
-        <ArticleColumns />
-        <ModalArticle  />     
+        <ArticleColumns />     
       </div>
     );
   }
