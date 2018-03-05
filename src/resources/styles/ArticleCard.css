@@ -38,3 +38,6 @@
 	border-top: 1px solid rgba(0, 0, 0, 0.2);
 
 }
+.articlecard-img {
+	max-height: 400px;
+}
