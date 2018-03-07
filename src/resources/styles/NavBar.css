@@ -1,4 +1,6 @@
-
+.wrapper {
+	margin-bottom: 20px;
+}
 .navbar {
 	display: flex;
 	flex-wrap: wrap;

@@ -3,6 +3,7 @@ import { Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button } from 'reactstrap';
 import userlogo from '../resources/images/userlogo.svg'
 import '../resources/styles/ModalArticleInfo.css'
+import RatingComp from '../constants/RatingComp.js'
 
 
 const ModalArticleInfo = (props) => {
@@ -21,7 +22,10 @@ const ModalArticleInfo = (props) => {
         <CardBody>
           <CardTitle >{}
 			</CardTitle>
-          <CardText>{}
+			<p><strong>Rate this article:</strong></p>
+          <CardText>
+          		
+          		<RatingComp />
 			</CardText>
          <hr/>
         </CardBody>
