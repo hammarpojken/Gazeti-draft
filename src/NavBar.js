@@ -35,7 +35,7 @@ class NavBar extends React.Component {
                  	<DropdownButton />
                  	<NavItem className='title'>
         				    GAZETI
-        			    </NavItem> 
+        			    </NavItem>
             		</div>                      
               </Nav>
             </div>
