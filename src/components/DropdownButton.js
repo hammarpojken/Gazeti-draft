@@ -4,7 +4,7 @@ import {
   DropdownToggle,
   DropdownMenu, 
   DropdownItem } from 'reactstrap';
-import './resources/styles/DropdownButton.css'
+import '../resources/styles/DropdownButton.css'
 
 export default class Dropdown extends React.Component {
   constructor(props) {
@@ -42,7 +42,6 @@ export default class Dropdown extends React.Component {
           <DropdownItem>Sports</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>My Profile</DropdownItem>
-          <DropdownItem>Publish</DropdownItem>
           <DropdownItem divider />
           <DropdownItem>Log Out</DropdownItem>
         </DropdownMenu>

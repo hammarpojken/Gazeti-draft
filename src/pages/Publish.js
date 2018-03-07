@@ -1,12 +1,14 @@
 import React from 'react'
-import NavBar from '../NavBar.js';
 
-export default class Publish {
+
+class Publish extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>Gazeti</h1>
+				<h1>Publish Gazeti</h1>
+				<p>PLACEHOLDER EDITOR</p>
 			</div>
 		);
 	}
 }
+export default Publish;

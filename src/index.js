@@ -4,22 +4,23 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 import './resources/styles/index.css';
 import registerServiceWorker from './registerServiceWorker';
-import App from './pages/App';
+import Home from './pages/Home.js';
 import Publish from './pages/Publish.js';
 import Profile from './pages/Profile.js';
+import Layout from './pages/Layout.js';
 
-
-const root = document.getElementById('root');
 
 ReactDOM.render(
 	<Router history={hashHistory}>
-		<Route path='/' component={App}>
-			<IndexRoute component={App}></IndexRoute>
-			<Route path='Publish' component={Publish}></Route>
+		<Route path='/' component={Layout}>
+			<IndexRoute component={Home} />
+			<Route path='/Profile' component={Profile} />
+			<Route path='/Publish' component={Publish} />
+			<Route path='/Home' component={Home} />
 		</Route>
  	</Router>,
-	root);
+	document.getElementById('root'));
 
 
 // registerServiceWorker();	
-	
+		

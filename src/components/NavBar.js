@@ -1,8 +1,9 @@
 import React from 'react';
-import './resources/styles/NavBar.css';
+import '../resources/styles/NavBar.css';
 import DropdownButton from './DropdownButton';
 import ProfileIcon from './ProfileIcon';
-import SearchBar from './SearchBar.js'
+import SearchBar from './SearchBar.js';
+import { Link } from 'react-router';
 import {
   Collapse,
   Navbar,
@@ -34,7 +35,9 @@ class NavBar extends React.Component {
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                  	<DropdownButton />
                  	<NavItem className='title'>
-        				    GAZETI
+                    <Link to='Home' className='link'>
+        				      GAZETI
+                    </Link>
         			    </NavItem>
             		</div>                      
               </Nav>
