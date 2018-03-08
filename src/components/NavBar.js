@@ -28,7 +28,7 @@ class NavBar extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className='wrapper'>
         <Navbar color="faded" light expand="md">
             <div className='main'>
               <Nav className="" navbar>
