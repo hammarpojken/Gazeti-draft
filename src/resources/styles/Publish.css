@@ -1,0 +1,19 @@
+.input-container {
+	text-align: center;
+}
+
+#title {
+	height: 1em;
+	width: 7em;
+}
+
+.body {
+	border: 2px solid black;
+}
+
+.ingress {
+	border: 2px solid black;
+}
+#publish-button {
+	margin-top: 10px;
+}
