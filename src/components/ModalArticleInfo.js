@@ -11,24 +11,24 @@ const ModalArticleInfo = (props) => {
   return (
       <Card className='modal-card-master'>
         <div className='card-articleinfo'>
-			<div className='card-author'>
-				<img src={userlogo} className='card-avatar' />
-				<p className='skribent'>{props.article.name}</p>
-			</div>
-			<div className='card-timestamp'>
-				<p className=''>1990-01-01 20:13</p>
-			</div>
-		</div>
-        <CardBody>
-          <CardTitle >{}
-			</CardTitle>
-			<p><strong>Rate this article:</strong></p>
-          <CardText>
-          		
-          		<RatingComp />
-			</CardText>
-         <hr/>
-        </CardBody>
+    			<div className='card-author'>
+    				<img src={userlogo} className='card-avatar' />
+    				<p className='skribent'>{props.article.name}</p>
+    			</div>
+  			<div className='card-timestamp'>
+  				<p className=''>1990-01-01 20:13</p>
+  		  	</div>
+  		  </div>
+          <CardBody>
+            <CardTitle >
+  			</CardTitle>
+        <CardText>
+        <RatingComp />
+            		
+  			</CardText>
+           <hr/>
+          </CardBody>
+          
       </Card>
       
     

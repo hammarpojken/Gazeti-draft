@@ -1,3 +1,6 @@
-.rating-body {
+.rating-wrapper{
+	width: 100%;
+}
+.rating-wrapper img {
 	width: 100%;
 }
