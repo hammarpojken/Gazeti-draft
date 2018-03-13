@@ -11,12 +11,13 @@ class RatingComp extends React.Component {
 
 	render() {
 		return(
-			<Rating
-			  emptySymbol={<SvgIcon className='far fa-star fa-3x'/>}
-			  fullSymbol={<SvgIcon className='fas fa-star fa-3x'/>}
-			  fractions={2}
-			  
-			/>
+			<div className='rating-wrapper'>
+				<Rating className='rating-body' 
+				  emptySymbol='far fa-star fa-3x'
+				  fullSymbol='fas fa-star fa-3x'
+				  fractions={2} 
+				/>
+			</div>
 			);
 	}
 }

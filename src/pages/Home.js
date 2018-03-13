@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../resources/styles/Home.css';
 import ModalArticle from '../components/ModalArticle.js'						
 import ArticleColumns from '../constants/ArticleColumns.js'
+import RatingComp from '../constants/RatingComp.js'
 import { Link } from 'react-router'
  
 
