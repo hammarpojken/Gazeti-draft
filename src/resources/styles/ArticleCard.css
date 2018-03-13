@@ -41,3 +41,8 @@
 .articlecard-img {
 	max-height: 400px;
 }
+
+.card-article:hover {
+	cursor: pointer;
+	transform: scale(1.02);
+}
