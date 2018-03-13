@@ -9,7 +9,7 @@ import { Link } from 'react-router'
 class Home extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="home">
         <ArticleColumns />     
       </div>
     );
