@@ -4,6 +4,7 @@ import { Card, CardImg, CardText, CardBody,
 import userlogo from '../resources/images/userlogo.svg'
 import '../resources/styles/ModalArticleInfo.css'
 import RatingComp from '../constants/RatingComp.js'
+import SocialMediaShare from './SocialMediaShare.js'
 
 
 const ModalArticleInfo = (props) => {
@@ -15,20 +16,22 @@ const ModalArticleInfo = (props) => {
     				<img src={userlogo} className='card-avatar' />
     				<p className='skribent'>{props.article.name}</p>
     			</div>
-  			<div className='card-timestamp'>
-  				<p className=''>1990-01-01 20:13</p>
+  		    <div className='card-timestamp'>
+  				  <p className=''>1990-01-01 20:13</p>
   		  	</div>
   		  </div>
-          <CardBody>
-            <CardTitle >
-  			</CardTitle>
-        <CardText>
-        <RatingComp />
-            		
-  			</CardText>
-           <hr/>
-          </CardBody>
-          
+
+        <CardBody>
+          <CardText>
+            <hr/>
+            <p className='rate-header'>Rate this article:</p>
+            <RatingComp />
+            <hr/>
+            <p className='share-header'>Share this article:</p>
+            <SocialMediaShare />
+            <hr/>
+    			</CardText>
+        </CardBody>
       </Card>
       
     

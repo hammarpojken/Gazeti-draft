@@ -1,4 +1,14 @@
 .modal-card-master {
 	width: 20rem;
 	border: none;
+	color: grey;
+}
+.share-header {
+	font-style: italic;
+	color: grey;
+
+}
+.rate-header {
+ 	font-style: italic;
+ 	color: grey;
 }
