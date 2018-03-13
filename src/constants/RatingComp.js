@@ -13,8 +13,8 @@ class RatingComp extends React.Component {
 		return(
 			<div className='rating-wrapper'>
 				<Rating className='rating-body' 
-				  emptySymbol='far fa-star fa-3x'
-				  fullSymbol='fas fa-star fa-3x'
+				  emptySymbol='far fa-star fa-2x'
+				  fullSymbol='fas fa-star fa-2x'
 				  fractions={2} 
 				/>
 			</div>
