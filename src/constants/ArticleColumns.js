@@ -1,7 +1,6 @@
 import React from 'react'
 import {CardColumns} from 'reactstrap'
 import ArticleCard  from './ArticleCard.js'
-import articles from '../articles.js'
 import ModalArticle from '../components/ModalArticle.js'
 
 class ArticleColumns extends React.Component{
@@ -9,7 +8,7 @@ class ArticleColumns extends React.Component{
 		super(props);
 		this.state = {
 			showModal: false,
-			articles: articles,
+			articles: [],
 			modalArticle: {}
 
 		};
@@ -18,8 +17,20 @@ class ArticleColumns extends React.Component{
 		
 
 	}
+	componentDidMount() {
+	    fetch('http://localhost:8090/rest/apps/gazeti/searchers/gazeti?q=*')
+	    .then(respons => respons.json())
+	    .then(results => {
+	    	const resultArray = []
+			for(let i = 0; i < results.documentList.documents.length; i++) {
+	      		resultArray.push(results.documentList.documents[i])
+        	}
+        	this.setState({
+    		articles: resultArray
+    	});
+    	})
+    }
 
-	
 	renderArticle(articles){
 		let articleArray = [];
 

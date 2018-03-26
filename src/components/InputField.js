@@ -5,8 +5,8 @@ import { options } from '@aeaton/react-prosemirror-config-default'
 const InputField = ({ value, onChange }) => (
   <HtmlEditor
     options={options}
-    value={value}
-    onChange={onChange}
+   // value={value}
+  //  onChange={onChange}
   />
 )
 export default InputField
