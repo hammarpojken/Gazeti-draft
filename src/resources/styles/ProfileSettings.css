@@ -1,0 +1,15 @@
+.bajs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.kiss{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.blod {
+
+}
