@@ -1,8 +1,12 @@
+.wrapper-card {
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
 .card-article {
 	max-width: 30rem;
+	margin: 0;
 	border: none;
-
-
 }
 
 .card-body {
@@ -18,7 +22,7 @@
 }
 .card-articleinfo p, 
 .card-articleinfo img {
-	margin-bottom: 0px;
+	margin-bottom: 0rem;
 	font-style: italic;
 	
 	
@@ -32,17 +36,18 @@
 }
 .card-author {
 	display: flex;
-	margin-bottom: 0px;
+	margin-bottom: 0rem;
 }
 .card hr {
-	border-top: 1px solid rgba(0, 0, 0, 0.2);
+	border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
 
 }
 .articlecard-img {
-	max-height: 400px;
+	max-height: 300px;
+
 }
 
-.card-article:hover {
-	cursor: pointer;
-	transform: scale(1.02);
+.wrapper-card:hover {
+	
+	transform: scale(1.02); 
 }
