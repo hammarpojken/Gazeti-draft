@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar.js';
 import { Link } from 'react-router';
+import SearchBar from '../components/SearchBar.js'
 
 
 class Layout extends Component {
@@ -9,6 +10,7 @@ class Layout extends Component {
     	<div>
 	      <div>
 	        <NavBar />
+	        <SearchBar />
 	      </div>
 	      <div>
 	      	{this.props.children}

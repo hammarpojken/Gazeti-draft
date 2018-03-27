@@ -1,8 +1,6 @@
 import React from 'react';
-import '../resources/styles/NavBar.css';
 import DropdownButton from './DropdownButton';
 import ProfileIcon from './ProfileIcon';
-import SearchBar from './SearchBar.js';
 import { Link } from 'react-router';
 import {
   Collapse,
@@ -11,6 +9,8 @@ import {
   Nav,
   NavItem,
  } from 'reactstrap';
+ import '../resources/styles/NavBar.css';
+
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -43,7 +43,7 @@ class NavBar extends React.Component {
               </Nav>
             </div>
             <div className='right-side'>
-              <SearchBar />           
+                      
               <ProfileIcon />
             </div>
         </Navbar>

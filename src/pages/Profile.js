@@ -9,11 +9,11 @@ class Profile extends React.Component {
 			<div>
 				<div id='container'>
 					<ul id='ul-profile'>
-						<li><Link to='Profile-Publish' id='li'>PUBLISH</Link></li>
-						<li><Link to='Profile-Portfolio'>PORTFOLIO</Link></li>
-						<li><Link to='Profile-Expertise'>EXPERTISE</Link></li>
-						<li><Link to='Profile-Rating'>RATING</Link></li>
-						<li><Link to='Profile-Settings'>SETTINGS</Link></li>
+						<li><Link to='Profile-Publish' className='profile-links'>PUBLISH</Link></li>
+						<li><Link to='Profile-Portfolio' className='profile-links'>PORTFOLIO</Link></li>
+						<li><Link to='Profile-Expertise' className='profile-links'>EXPERTISE</Link></li>
+						<li><Link to='Profile-Rating' className='profile-links'>RATING</Link></li>
+						<li><Link to='Profile-Settings' className='profile-links'>SETTINGS</Link></li>
 					</ul>
 				</div>	
 				<div>

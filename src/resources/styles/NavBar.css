@@ -10,6 +10,7 @@
 	justify-content: space-between;
 	background-color: black; 
 	line-height: 1rem;
+	border-radius: 1px;
 
 }
 
@@ -28,7 +29,9 @@
 .right-side {
 	display: flex;
 	flex-wrap: wrap;
-	position: row;
+	justify-content: space-between;
+	flex-direction: row;
+	
 
 
 }

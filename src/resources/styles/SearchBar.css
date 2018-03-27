@@ -1,14 +1,19 @@
-#search {
-	width: 100%;
-	border-radius: 20px;
-	text-align: center;
-	font-style: italic;
-	font-weight: lighter;
-
+button {
+	background-color: black;
+	color: white;
+}
+::-webkit-input-placeholder {
+   text-align: center;
 }
 
-.search-main {
-	margin: 10px;
-	
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
 }
 
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}
