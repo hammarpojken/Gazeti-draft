@@ -19,7 +19,7 @@ ReactDOM.render(
 		<Route path='/' component={Layout}>
 			<IndexRoute component={Home} />
 			<Route path='/Profile' component={Profile} />
-			<Route path='/Publish' component={Publish} />
+			<Route path='/Profile-Publish' component={Publish} />
 			<Route path='/Home' component={Home} />
 			<Route path='/Profile-Settings' component={ProfileSettings} />
 			<Route path='/Profile-Portfolio' component={ProfilePortfolio} />
