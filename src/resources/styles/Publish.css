@@ -1,21 +1,21 @@
 .input-container {
-	
+
 }
 
 #title {
 
-	height: 2em;
-	width: 7em;
+    height: 2em;
+    width: 7em;
 }
 
 .border {
-	border: 2px solid grey;
+    border: 2px solid grey;
 }
 
 
 #publish-button {
-	margin-top: 10px;
+    margin-top: 10px;
 }
 .header {
-	text-align: left;
+    text-align: left;
 }
