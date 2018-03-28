@@ -1,12 +1,13 @@
 import React from 'react';
 import '../resources/styles/ProfileSettings.css'
 import Profile from './Profile.js';
+import ModalAvatar from '../components/ModalAvatar.js'
 
 
 class ProfileSettings extends React.Component {
 	render() {
 		return(
-			<div>
+			<div className='holder'>
 				<div className='info-wrapper'>
 					<div className="container">
 						<div className="row">
@@ -326,12 +327,8 @@ class ProfileSettings extends React.Component {
 					        </form>
 						</div>
 						<div className='right-side'>
-							<div>
 								<img className="img-responsive" src="http://www.pvhc.net/img240/uyttxprhsqycyximpzjb.png" width='200px' height='200px' />
-							</div>
-	                   		<div className='edit-button'>
-	                   			<p class="fa fa-wrench"> Edit</p>
-	                   		</div>
+								<ModalAvatar />
 						</div>
 					</div>
 				</div>

@@ -1,4 +1,8 @@
-
+.container {
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  height: 100%;
+}
 .info-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -9,4 +13,8 @@
 .right-side {
   margin-left: 200px;
   display: block;
+}
+
+.img-responsive {
+  margin-bottom: 30px;
 }
