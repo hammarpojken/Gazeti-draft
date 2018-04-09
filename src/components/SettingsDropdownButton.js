@@ -1,12 +1,7 @@
 import React from 'react';
-import { 
-  ButtonDropdown,
-  DropdownToggle,
-  DropdownMenu, 
-  DropdownItem } from 'reactstrap';
-import '../resources/styles/DropdownButton.css'
+import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-export default class Dropdown extends React.Component {
+export default class Example extends React.Component {
   constructor(props) {
     super(props);
 
@@ -25,11 +20,10 @@ export default class Dropdown extends React.Component {
   render() {
     return (
       <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle className='button-menu'>
-        <span className="navbar-toggler-icon b"></span>
+        <DropdownToggle caret className=''>
+        Topics
         </DropdownToggle> 
-        <DropdownMenu className='dropdown-menu'>
-          <DropdownItem header>Categories</DropdownItem>
+        <DropdownMenu className=''>
           <DropdownItem>Local News</DropdownItem>
           <DropdownItem>National News</DropdownItem>
           <DropdownItem>Global News</DropdownItem>
@@ -40,10 +34,6 @@ export default class Dropdown extends React.Component {
           <DropdownItem>Life & Home</DropdownItem>
           <DropdownItem>Health</DropdownItem>
           <DropdownItem>Sports</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>My Profile</DropdownItem>
-          <DropdownItem divider />
-          <DropdownItem>Log Out</DropdownItem>
         </DropdownMenu>
       </ButtonDropdown>
     );
