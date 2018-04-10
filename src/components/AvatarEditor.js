@@ -7,7 +7,7 @@ class AvatarEditor extends React.Component {
  
   constructor(props) {
     super(props)
-    const src = './example/einshtein.jpg'
+    const src = './example/lady.jpg'
     this.state = {
       preview: null,
       src: false,

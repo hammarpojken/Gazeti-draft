@@ -7,10 +7,14 @@ export default class Example extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
+      topic: this.props.topic
     };
+    
   }
-
+  componentDidMount() {
+    
+  }
   toggle() {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
@@ -18,22 +22,23 @@ export default class Example extends React.Component {
   }
 
   render() {
+    
     return (
       <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle caret className=''>
-        Topics
+        {this.props.topic}
         </DropdownToggle> 
         <DropdownMenu className=''>
-          <DropdownItem>Local News</DropdownItem>
-          <DropdownItem>National News</DropdownItem>
-          <DropdownItem>Global News</DropdownItem>
-          <DropdownItem>Financial</DropdownItem>
-          <DropdownItem>Entertainment</DropdownItem>
-          <DropdownItem>Gaming</DropdownItem>
-          <DropdownItem>Innovations</DropdownItem>
-          <DropdownItem>Life & Home</DropdownItem>
-          <DropdownItem>Health</DropdownItem>
-          <DropdownItem>Sports</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Local News</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>National News</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Global News</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Financial</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Entertainment</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Gaming</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Innovations</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Life & Home</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Health</DropdownItem>
+          <DropdownItem onClick={this.props.handleClick}>Sports</DropdownItem>
         </DropdownMenu>
       </ButtonDropdown>
     );
