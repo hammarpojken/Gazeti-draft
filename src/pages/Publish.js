@@ -83,9 +83,11 @@ class Publish extends React.Component {
 								<label>Article Image</label>
 								<div id='image-wrapper'>
 									<input id='image-field' className='border-publish' type='text'/>
-									<div>
-										<button htmlFor='mymy' id='image-btn-publish' className='btn'>Add Image</button>
-										<input name='mymy' id='input-file' type='file' className='btn btn-primary'/>
+									<div className='file-upload-btn'>
+										<label for="file-upload" class="btn btn-primary">
+										  	<i class="fas fa-cloud-upload-alt"></i> Upload image
+										</label>
+										<input id="file-upload" type="file" accept="image/*"/>
 									</div>
 								</div>
 								<div id='input-wrapper'>
