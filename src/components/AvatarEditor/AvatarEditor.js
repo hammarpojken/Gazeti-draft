@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Avatar from 'react-avatar-edit'
 import './AvatarEditor.css'
  
@@ -7,7 +6,7 @@ class AvatarEditor extends React.Component {
  
   constructor(props) {
     super(props)
-    const src = './example/lady.jpg'
+//    const src = './example/lady.jpg'
     this.state = {
       preview: null,
       src: false,
@@ -37,7 +36,7 @@ class AvatarEditor extends React.Component {
           />
         </div>
         <div>
-            <img src={this.state.preview} className='avatar-preview' />
+            <img src={this.state.preview} alt='avatar' className='avatar-preview' />
         </div>
       </div>
     )

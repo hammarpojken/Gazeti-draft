@@ -1,10 +1,10 @@
 import React from 'react'
-import Editor from '../../components/Editor/Editor.js';
-import InputField from '../../components/InputField/InputField.js'
+//import Editor from '../../components/Editor/Editor.js';
+//import InputField from '../../components/InputField/InputField.js'
 import './Publish.css'
 import Profile from '../Profile/Profile.js';
 import SettingsDropdownButton from '../../components/SettingsDropdownButton/SettingsDropdownButton.js'
-import SimpleReactFileUpload from '../../components/SimpleReactFileUpload/SimpleReactFileUpload.js'
+//import SimpleReactFileUpload from '../../components/SimpleReactFileUpload/SimpleReactFileUpload.js'
 
 
 
@@ -24,7 +24,7 @@ class Publish extends React.Component {
         let title = document.getElementById('title').value
         let preamble = document.getElementById('preamble').value
         let content = document.getElementById('content').value
-        let topic = document.querySelector('#topic')
+     //   let topic = document.querySelector('#topic')
 
         
         let article= [{
@@ -84,8 +84,8 @@ class Publish extends React.Component {
 								<div id='image-wrapper'>
 									<input id='image-field' className='border-publish' type='text'/>
 									<div className='file-upload-btn'>
-										<label for="file-upload" class="btn btn-primary">
-										  	<i class="fas fa-cloud-upload-alt"></i> Upload image
+										<label htmlFor="file-upload" className="btn btn-primary">
+										  	<i className="fas fa-cloud-upload-alt"></i> Upload image
 										</label>
 										<input id="file-upload" type="file" accept="image/*"/>
 									</div>

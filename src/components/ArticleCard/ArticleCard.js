@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+  CardTitle } from 'reactstrap';
 import userlogo from './userlogo.svg'
 import './ArticleCard.css'
 
@@ -13,7 +13,7 @@ const ArticleCard = (props) => {
           <CardImg className='articlecard-img' top width="100%" src={props.props.main_img_url + props.props._id * 10} alt="Card image cap" />
           <div className='card-articleinfo'>
   			<div className='card-author'>
-  				<img src={userlogo} className='card-avatar' />
+  				<img src={userlogo} alt='userlogo'  className='card-avatar' />
   				<p className='skribent'>{props.props.author}</p>
   			</div>
   			<div className='card-timestamp'>

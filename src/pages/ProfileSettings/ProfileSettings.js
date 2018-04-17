@@ -329,7 +329,7 @@ class ProfileSettings extends React.Component {
 						        </form>
 							</div>
 							<div className='right-side'>
-									<img className="img-responsive" src="http://www.pvhc.net/img240/uyttxprhsqycyximpzjb.png" width='200px' height='200px' />
+									<img className="img-responsive" alt='pic' src="http://www.pvhc.net/img240/uyttxprhsqycyximpzjb.png" width='200px' height='200px' />
 									<ModalAvatar />
 							</div>
 						</div>
