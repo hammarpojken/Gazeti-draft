@@ -1,6 +1,5 @@
 import React from 'react'
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardText, CardBody } from 'reactstrap';
 import userlogo from './userlogo.svg'
 import './ModalArticleInfo.css'
 import RatingComp from '../RatingComp/RatingComp.js'
@@ -13,7 +12,7 @@ const ModalArticleInfo = (props) => {
       <Card className='modal-card-master'>
         <div className='card-articleinfo'>
     			<div className='card-author'>
-    				<img src={userlogo} className='card-avatar' />
+    				<img src={userlogo} className='card-avatar' alt='userlogo' />
     				<p className='skribent'>{props.article.author}</p>
     			</div>
   		    <div className='card-timestamp'>

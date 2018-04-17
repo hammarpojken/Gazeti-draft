@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './Home.css';
-import ModalArticle from '../../components/ModalArticle/ModalArticle.js'						
+//import ModalArticle from '../../components/ModalArticle/ModalArticle.js'						
 import ArticleColumns from '../../components/ArticleColumns/ArticleColumns.js'
-import RatingComp from '../../components/RatingComp/RatingComp.js'
-import { Link } from 'react-router'
+//import RatingComp from '../../components/RatingComp/RatingComp.js'
+//import { Link } from 'react-router'
 import SearchBar from '../../components/SearchBar/SearchBar.js'
  
 

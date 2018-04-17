@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import registerServiceWorker from './registerServiceWorker';
 import Home from './pages/Home/Home.js';
 import Publish from './pages/Publish/Publish.js';
 import Profile from './pages/Profile/Profile.js';

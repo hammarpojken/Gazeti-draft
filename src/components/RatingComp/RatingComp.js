@@ -1,13 +1,9 @@
 import React from 'react'
 import Rating from 'react-rating'
 import './RatingComp.css'
-import SvgIcon from '../SvgIcon/SvgIcon.js'
+//import SvgIcon from '../SvgIcon/SvgIcon.js'
 
 class RatingComp extends React.Component {
-	constructor() {
-		super();
-	}
-
 
 	render() {
 		return(

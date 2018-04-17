@@ -1,14 +1,11 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import userlogo from './userlogo.svg'
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+//import userlogo from './userlogo.svg'
 import './ModalArticle.css'
 import ModalArticleContent from '../ModalArticleContent/ModalArticleContent.js'
 import ModalArticleInfo from '../ModalArticleInfo/ModalArticleInfo.js'
 
 class ArticleModal extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     

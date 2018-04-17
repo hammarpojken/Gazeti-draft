@@ -8,7 +8,7 @@ const ProfileIcon = () => {
 	return (
 		<div>
 			<Link to='Profile'>
-				<img className='profile-icon' src={ Person } />
+				<img className='profile-icon' alt='user' src={ Person } />
 			</Link>	
 		</div>
 	);

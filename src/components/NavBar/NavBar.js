@@ -3,9 +3,7 @@ import DropdownButton from '../DropdownButton/DropdownButton.js';
 import ProfileIcon from '../ProfileIcon/ProfileIcon';
 import { Link } from 'react-router';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   Nav,
   NavItem,
  } from 'reactstrap';
