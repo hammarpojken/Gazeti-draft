@@ -1,0 +1,14 @@
+#publish-btn-publish {
+	background-color: black;
+	color: white;
+}
+
+
+#delete-btn-publish {
+	float: right;
+	clear: right;
+}
+
+#button-wrapper button {
+	margin-right: 10px;
+}
