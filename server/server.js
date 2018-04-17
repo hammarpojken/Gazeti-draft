@@ -3,8 +3,8 @@ const express = require('express');
 const app = express();
 
 
-app.get('/', function(res,req){
-		res.status(303).send('hej')
+app.get('/#/', function(res,req){
+		res.status(404)
 });
 
 

@@ -1,0 +1,24 @@
+#image-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+#image-field {
+	width: 100%;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+   
+    cursor: pointer;
+}
+.file-upload-btn {
+	margin-left: 10px;
+
+
+}
+input[type="file"] {
+    display: none;
+}
+
