@@ -2,16 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import 'bootstrap/dist/css/bootstrap.css';
-import './resources/styles/index.css';
+import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-import Home from './pages/Home.js';
-import Publish from './pages/Publish.js';
-import Profile from './pages/Profile.js';
-import Layout from './pages/Layout.js';
-import ProfileSettings from './pages/ProfileSettings.js'
-import ProfileRating from './pages/ProfileRating.js'
-import ProfileExpertise from './pages/ProfileExpertise.js'
-import ProfilePortfolio from './pages/ProfilePortfolio.js'
+import Home from './pages/Home/Home.js';
+import Publish from './pages/Publish/Publish.js';
+import Profile from './pages/Profile/Profile.js';
+import Layout from './pages/Layout/Layout.js';
+import ProfileSettings from './pages/ProfileSettings/ProfileSettings.js'
+import ProfileRating from './pages/ProfileRating/ProfileRating.js'
+import ProfileExpertise from './pages/ProfileExpertise/ProfileExpertise.js'
+import ProfilePortfolio from './pages/ProfilePortfolio/ProfilePortfolio.js'
 
 
 ReactDOM.render(
