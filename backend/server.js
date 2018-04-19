@@ -22,13 +22,15 @@ app.post('/upload', (req,res) => {
   let sampleFile = req.files.img;
  
   // Use the mv() method to place the file somewhere on your server
-  sampleFile.mv('./upload/filename.jpg', function(err) {
+  sampleFile.mv('./uploads/filename.jpg', function(err) {
     if (err)
       return res.status(500).send(err);
  
     res.send('File uploaded!');
   });
 });
+
+app.get('/getImage/:id')
 
 
 app.listen(3001, ()=> {

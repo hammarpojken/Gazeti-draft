@@ -14,7 +14,6 @@ class UploadImage extends React.Component {
 		
 		fetch('http://localhost:3001/upload', {
 					  method: 'post',
-
 					  body: formData
 					})
 					.then(response => response.json())
