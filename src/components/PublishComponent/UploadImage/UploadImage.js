@@ -5,25 +5,51 @@ class UploadImage extends React.Component {
 	constructor(props) {
 		super(props);
 
+		this.state = {
+			currentImg: ""
+		}
+
+		this.saveImage = this.saveImage.bind(this)
+
+	}
+	handleImageShow(url) {
+		console.log(url)
+		this.setState({currentImg:  url})
 	}
 
 	saveImage(event) {
-		var formData = new FormData();
+		if(!event.target.files[0])
+			return
+
+		const url = 'http://localhost:3001/images/'
+		let id = 'Niclas Svensson livet har en fin mening'
 		let img = event.target.files[0]
+		
+		let imgId = id.replace(/ /g,"-") + '-' + img.name.replace(/ /g,"-");
+
+		var formData = new FormData();
+		formData.append('id', imgId)
 		formData.append('img', img)
 		
 		fetch('http://localhost:3001/upload', {
 					  method: 'post',
 					  body: formData
 					})
-					.then(response => response.json())
-					.catch(error => console.error('Error:', error))
-					.then(response => console.log('Success:', response));
-}
+					.then(response => {
+						if(response.status === 200){
+							this.handleImageShow(url + imgId)
+						}
+
+					})
+						
+		}
+
 	render() {
+
 		return (
 			<div id='image-wrapper'>
 				<p id='image-field' className='border-publish'>{this.props.imgSelected}</p>
+				<img src={this.state.currentImg} style={{width: '200px', height:'200px'}}/>
 					<div className='file-upload-btn'>
 						<label htmlFor="file-upload" className="btn btn-primary">
 				  			<i className="fas fa-cloud-upload-alt"></i> Upload image
