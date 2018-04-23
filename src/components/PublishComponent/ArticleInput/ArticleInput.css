@@ -5,9 +5,11 @@
 }
 #preamble{
 	height: 10rem;
+	resize: none;
 }
 
 #content{
 	height: 20rem;
 	margin-bottom: 10px;
+	resize: none
 }

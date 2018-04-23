@@ -12,7 +12,7 @@ class ModalAvatar extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={() => this.openModal()}>Edit Avatar</button>
+        <button className='btn btn-secondary' onClick={() => this.openModal()}>Edit Avatar</button>
         <Modal isOpen={this.state.isModalOpen} onClose={() => this.closeModal()}>
           <ModalHeader toggle={this.props.isModalOpen}></ModalHeader>
               <ModalBody>
@@ -20,7 +20,7 @@ class ModalAvatar extends React.Component {
                 <div className='editor'>
                   <AvatarEditor />
                 </div>
-                  <p><button onClick={() => this.closeModal()}>Save</button></p>
+                  <button onClick={() => this.closeModal()} className='btn btn-secondary'>Save</button>
               </ModalBody>
         </Modal>
       </div>
