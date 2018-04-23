@@ -18,6 +18,7 @@ const OptionsField = () => {
 			<input id='location' className='border-publish' type='text'/>
 			<p>Email:</p>
 			<input id='email' className='border-publish' type='text'/>
+			<textarea id='bio' className='border-publish'/>
 		</div>
 		// Make components of these
 	)
