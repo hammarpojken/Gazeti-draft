@@ -14,7 +14,9 @@ class PublishContainer extends React.Component {
 		super(props);
 		this.state = {
 			topic: 'Topics',
-			img: undefined
+			img: undefined,
+			imgUrl: '',
+
 		}
 		this.handleTopic = this.handleTopic.bind(this)
 		this.handlePublish = this.handlePublish.bind(this)
@@ -30,10 +32,10 @@ class PublishContainer extends React.Component {
         let preamble = document.getElementById('preamble').value
         let content = document.getElementById('content').value
      //   let topic = document.querySelector('#topic')
-
+     	let author = 'Pontus Hammar'
         
         let article= [{
-            id: 'Pontus Hammar' + {title},
+            id: {author} + {title},
             fields: [
                 
                 {name: 'title', type:'string', value:title},
@@ -71,9 +73,8 @@ class PublishContainer extends React.Component {
 			topic: event.target.firstChild.nodeValue
 		});
 	}
-	handleUpload(event) {
-		const value= event.target.value;
-		this.setState({img: value})
+	handleUpload(imgName, imgUrl) {
+		this.setState({img: imgName, imgUrl: imgUrl})
 		
 	}
 
