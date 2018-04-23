@@ -16,6 +16,8 @@ class ProfileSettings extends React.Component {
 				</div>
 				<div id='settings-wrapper'>
 					<ModalAvatar />
+					// avatar img
+					// Google map
 				</div>
 
 			</div>

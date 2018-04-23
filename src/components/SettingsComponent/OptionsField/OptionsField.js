@@ -9,7 +9,8 @@ const OptionsField = () => {
 			<p>Last Name:</p>
 			<input id='lname' className='border-publish' type='text'/>
 			<p>Gender:</p>
-			<select className='select'>
+			<select className='border-publish' id='select'>
+				<option selected disabled>Choose a gender</option>
 				<option value="female">female</option>
 				<option value="male">male</option>
 				<option value="other">other</option>
@@ -18,7 +19,9 @@ const OptionsField = () => {
 			<input id='location' className='border-publish' type='text'/>
 			<p>Email:</p>
 			<input id='email' className='border-publish' type='text'/>
+			<p>Bio</p>
 			<textarea id='bio' className='border-publish'/>
+			<button className='btn btn-secondary'>Save</button>
 		</div>
 		// Make components of these
 	)
