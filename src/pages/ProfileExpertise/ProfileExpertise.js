@@ -1,12 +1,12 @@
 import React from 'react';
 import './ProfileExpertise.css'
-import Profile from '../Profile/Profile.js';
+import NavigateBar from '../../components/NavigateBar/NavigateBar.js';
 
 class ProfileExpertise extends React.Component {
 	render() {
 		return(
 			<div>
-				<Profile />
+				<NavigateBar/>
 				<div>
 					<h2>Expertise</h2>
 				</div>
