@@ -1,22 +1,17 @@
 import React from 'react'
 import './Profile.css'
-import { Link } from 'react-router'
+import NavigateBar from '../../components/NavigateBar/NavigateBar.js'
 
 
 class Profile extends React.Component {
 	render() {
 		return (
-			<div>
+			<div id='wrapper'>
 				<div id='container'>
-					<ul id='ul-profile'>
-						<li><Link to='Profile-Publish' className='profile-links'>PUBLISH</Link></li>
-						<li><Link to='Profile-Portfolio' className='profile-links'>PORTFOLIO</Link></li>
-						<li><Link to='Profile-Expertise' className='profile-links'>EXPERTISE</Link></li>
-						<li><Link to='Profile-Rating' className='profile-links'>RATING</Link></li>
-						<li><Link to='Profile-Settings' className='profile-links'>SETTINGS</Link></li>
-					</ul>
+					<NavigateBar />
 				</div>	
 				<div>
+				<h2>Placeholder - outside view on user profile</h2>
 		      	{this.props.children}
 		      </div>
 		    </div>		);

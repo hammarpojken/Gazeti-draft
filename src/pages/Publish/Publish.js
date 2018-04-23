@@ -1,12 +1,12 @@
 import React from 'react'
 import './Publish.css'
 import PublishContainer from '../../components/PublishComponent/PublishContainer.js'
-import Profile from '../Profile/Profile.js';
+import NavigateBar from '../../components/NavigateBar/NavigateBar.js';
 
 const Publish = () => {
 		return (
 			<div>
-				<Profile />
+				<NavigateBar />
 				<PublishContainer />
 			</div>
 		);
