@@ -16,6 +16,7 @@ class PublishContainer extends React.Component {
 			topic: 'Topics',
 			img: undefined,
 			imgUrl: '',
+			author: 'Pontus Hammar',
 
 		}
 		this.handleTopic = this.handleTopic.bind(this)
@@ -28,22 +29,23 @@ class PublishContainer extends React.Component {
 
 
 	handlePublish() {
+		let {author, imgUrl, topic} = this.state
         let title = document.getElementById('title').value
         let preamble = document.getElementById('preamble').value
         let content = document.getElementById('content').value
-     //   let topic = document.querySelector('#topic')
-     	let author = 'Pontus Hammar'
+		let id = (author + title).replace(/ /g,"-");
+     	let date = new Date();
         
         let article= [{
-            id: {author} + {title},
+            id: id,
             fields: [
                 
                 {name: 'title', type:'string', value:title},
                 {name: 'preamble', type:'string', value:preamble},
-                {name: 'main_content', type:'string', value:content}
-               // {name: 'topic', type:'string', value:topic}
-                //{name: 'main_content', type:'string', value:mainContent}
-                //{name: 'main_content', type:'string', value:mainContent}
+                {name: 'main_content', type:'string', value:content},
+               	{name: 'topic', type:'string', value:topic},
+                {name: 'main_img_url', type:'string', value:imgUrl},
+                {name: 'timestamp', type:'string', value:date}
                 //{name: 'main_content', type:'string', value:mainContent}
             ],
 
@@ -82,7 +84,7 @@ class PublishContainer extends React.Component {
 		return(
 			<div id='publish-wrapper'>
 				<div id='content-wrapper'>	
-					<UploadImage onChange={this.handleUpload} imgSelected={this.state.img} />
+					<UploadImage onChange={this.handleUpload} imgSelected={this.state.img} author={this.state.author} />
 					<ArticleInput />
 					<InputButtons handleDeleteInput={this.handleDeleteInput} handlePublish={this.handlePublish} />
 				</div>

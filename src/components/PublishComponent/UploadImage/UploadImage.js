@@ -22,7 +22,7 @@ class UploadImage extends React.Component {
 			return
 
 		const url = 'http://localhost:3001/images/'
-		let id = 'Niclas Svensson livet har en fin mening'
+		let id = this.props.author
 		let img = event.target.files[0]
 		
 		let imgId = id.replace(/ /g,"-") + '-' + img.name.replace(/ /g,"-");
