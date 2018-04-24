@@ -34,7 +34,7 @@ class PublishContainer extends React.Component {
 
 
 	handlePublish() {
-		let {author, imgUrl, topic} = this.state
+		let {author, main_img_url, topic} = this.state
         let title = document.getElementById('title').value
         let preamble = document.getElementById('preamble').value
         let content = document.getElementById('content').value
@@ -49,7 +49,7 @@ class PublishContainer extends React.Component {
                 {name: 'preamble', type:'string', value:preamble},
                 {name: 'main_content', type:'string', value:content},
                	{name: 'topic', type:'string', value:topic},
-                {name: 'main_img_url', type:'string', value:imgUrl},
+                {name: 'main_img_url', type:'string', value:main_img_url},
                 {name: 'timestamp', type:'string', value:date},
                 {name: 'author', type:'string', value:author}
             ],
