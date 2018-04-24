@@ -16,7 +16,10 @@
 .env.test.local
 .env.production.local
 .git
-
+.png
+.jpg
+.jpeg
+.svg
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
