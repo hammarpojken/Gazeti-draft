@@ -16,8 +16,8 @@
 .env.test.local
 .env.production.local
 .git
-.png
-.jpg
+.PNG
+.JPG
 .jpeg
 .svg
 npm-debug.log*
