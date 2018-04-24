@@ -2,6 +2,7 @@ import React from 'react'
 import {CardColumns} from 'reactstrap'
 import ArticleCard  from '../ArticleCard/ArticleCard.js'
 import ModalArticle from '../ModalArticle/ModalArticle.js'
+import './ArticleColumns.css'
 
 class ArticleColumns extends React.Component{
 	constructor(props){
@@ -53,11 +54,11 @@ class ArticleColumns extends React.Component{
 
 	render() {
 		return(
-			<div>
-			<CardColumns>
-				{this.renderArticle(this.state.articles)}
-			</CardColumns>
-			<ModalArticle show={this.state.showModal} onShow={this.showModal} oncloseModal={this.oncloseModal} article={this.state.modalArticle}/>
+			<div className='column-wrapper'>
+				<CardColumns>
+					{this.renderArticle(this.state.articles)}
+				</CardColumns>
+				<ModalArticle show={this.state.showModal} onShow={this.showModal} oncloseModal={this.oncloseModal} article={this.state.modalArticle}/>
 			
 			</div>
 			)
