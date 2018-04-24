@@ -10,7 +10,7 @@ const ArticleCard = (props) => {
   return (
       <div className='wrapper-card'>
         <Card className='card-article' onClick={props.onClick}>
-          <CardImg className='articlecard-img' top width="100%" src={props.props.main_img_url + props.props._id * 10} alt="Card image cap" />
+          <CardImg className='articlecard-img' top width="100%" src={props.props.main_img_url} alt="Card image cap" />
           <div className='card-articleinfo'>
   			<div className='card-author'>
   				<img src={userlogo} alt='userlogo'  className='card-avatar' />
