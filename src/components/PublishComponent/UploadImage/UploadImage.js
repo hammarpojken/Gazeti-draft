@@ -48,7 +48,7 @@ class UploadImage extends React.Component {
 
 		return (
 			<div id='image-wrapper'>
-				<p id='image-field' className='border-publish'>{this.props.imgSelected}</p>
+				{/*<p id='image-field' className='border-publish'>{this.props.imgSelected}</p>*/}
 				<img src={this.state.currentImg} style={{width: '200px', height:'200px'}}/>
 					<div className='file-upload-btn'>
 						<label htmlFor="file-upload" className="btn btn-primary">
