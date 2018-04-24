@@ -12,9 +12,9 @@ class UploadImage extends React.Component {
 		this.saveImage = this.saveImage.bind(this)
 
 	}
-	handleImageShow(url) {
-		console.log(url)
+	handleImageShow(url, imgName) {
 		this.setState({currentImg:  url})
+		this.props.onChange(imgName, url);
 	}
 
 	saveImage(event) {
@@ -37,7 +37,7 @@ class UploadImage extends React.Component {
 					})
 					.then(response => {
 						if(response.status === 200){
-							this.handleImageShow(url + imgId)
+							this.handleImageShow((url + imgId), img.name)
 						}
 
 					})
