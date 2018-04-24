@@ -9,7 +9,7 @@ const ModalArticleContent = (props) => {
 	
   return (
       <Card className='modal-card-content'>
-        <CardImg className='modal-card-img' top width="100%" src={props.article.main_img_url + props.article._id * 10} alt="Card image cap" />
+        <CardImg className='modal-card-img' top width="100%" src={props.article.main_img_url} alt="Card image cap" />
         <div className='card-articleinfo'>
     			<div className='card-author'>
     				<img src={userlogo} alt='userlogo' className='card-avatar' />
@@ -20,7 +20,7 @@ const ModalArticleContent = (props) => {
     			</div>
 		    </div>
         <CardBody>
-          <CardTitle > Titel
+          <CardTitle >{props.article.title}
 			</CardTitle>
             <p><strong>{props.article.preamble}</strong></p>
           <CardText>{props.article.main_content}

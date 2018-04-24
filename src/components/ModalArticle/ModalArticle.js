@@ -5,6 +5,7 @@ import './ModalArticle.css'
 import ModalArticleContent from '../ModalArticleContent/ModalArticleContent.js'
 import ModalArticleInfo from '../ModalArticleInfo/ModalArticleInfo.js'
 
+
 class ArticleModal extends React.Component {
 
   render() {

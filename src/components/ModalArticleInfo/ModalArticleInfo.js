@@ -21,15 +21,15 @@ const ModalArticleInfo = (props) => {
   		  </div>
 
         <CardBody>
-          <CardText>
-            <hr/>
-            <p className='rate-header'>Rate this article:</p>
-            <RatingComp />
-            <hr/>
-            <p className='share-header'>Share this article:</p>
-            <SocialMediaShare />
-            <hr/>
-    			</CardText>
+            <div>
+              <hr/>
+              <p className='rate-header'>Rate this article:</p>
+              <RatingComp />
+              <hr/>
+              <p className='share-header'>Share this article:</p>
+              <SocialMediaShare />
+              <hr/>
+            </div>
         </CardBody>
       </Card>
       

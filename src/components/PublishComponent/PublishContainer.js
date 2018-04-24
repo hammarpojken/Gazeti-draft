@@ -6,6 +6,7 @@ import TagPicker from './TagPicker/TagPicker.js'
 import PublishSchedule from './PublishSchedule/PublishSchedule.js'
 import InputButtons from './InputButtons/InputButtons.js'
 import ElementPicker from './ElementPicker/ElementPicker.js'
+import ModalArticle from '../ModalArticle/ModalArticle.js'
 import './PublishContainer.css'
 
 
@@ -15,14 +16,18 @@ class PublishContainer extends React.Component {
 		this.state = {
 			topic: 'Topics',
 			img: undefined,
-			imgUrl: '',
+			main_img_url: '',
 			author: 'Pontus Hammar',
+			showModal: false,
+			modalArticle: {}
 
 		}
 		this.handleTopic = this.handleTopic.bind(this)
 		this.handlePublish = this.handlePublish.bind(this)
 		this.handleDeleteInput = this.handleDeleteInput.bind(this)
 		this.handleUpload = this.handleUpload.bind(this)
+		this.showModal = this.showModal.bind(this)
+		this.oncloseModal = this.oncloseModal.bind(this)
 		
 	}
 
@@ -60,6 +65,7 @@ class PublishContainer extends React.Component {
 
         console.log(JSON.stringify(article))
 	}
+
 	handleDeleteInput() {
 
 		if(window.confirm('Are you sure about this?')) {
@@ -76,17 +82,52 @@ class PublishContainer extends React.Component {
 		});
 	}
 	handleUpload(imgName, imgUrl) {
-		this.setState({img: imgName, imgUrl: imgUrl})
+		this.setState({img: imgName, main_img_url: imgUrl})
 		
 	}
 
+	showModal(id) {
+		let article = {
+			main_img_url: this.state.main_img_url,
+			title: document.querySelector('#title').value,
+			preamble: document.querySelector('#preamble').value,
+			main_content: document.querySelector('#content').value,
+			timestamp: '2012-02-12',
+			author: this.state.author,
+
+		}
+		this.setState({
+			showModal: !this.state.showModal,
+			modalArticle: article,
+		});
+
+	}
+	oncloseModal() {
+		this.setState({showModal: !this.state.showModal})
+	}
+
+
 	render() {
+		let modal = this.state.showModal ? (
+			<ModalArticle 
+					show={this.state.showModal} 
+					article={this.state.modalArticle}
+					oncloseModal={this.oncloseModal} />	
+			) : (
+			<div>
+
+			</div>
+			)
+		
 		return(
 			<div id='publish-wrapper'>
 				<div id='content-wrapper'>	
 					<UploadImage onChange={this.handleUpload} imgSelected={this.state.img} author={this.state.author} />
 					<ArticleInput />
-					<InputButtons handleDeleteInput={this.handleDeleteInput} handlePublish={this.handlePublish} />
+					<InputButtons 
+					handleDeleteInput={this.handleDeleteInput} 
+					handlePublish={this.handlePublish}
+					showModal={this.showModal} />
 				</div>
 				<div id='settings-wrapper'>
 					<ElementPicker />
@@ -94,6 +135,7 @@ class PublishContainer extends React.Component {
 					<TagPicker />
 					<PublishSchedule /> 
 				</div>
+				{modal}			
 			</div>
 		)
 
