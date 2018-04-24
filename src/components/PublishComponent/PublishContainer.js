@@ -45,7 +45,7 @@ class PublishContainer extends React.Component {
                 {name: 'main_content', type:'string', value:content},
                	{name: 'topic', type:'string', value:topic},
                 {name: 'main_img_url', type:'string', value:imgUrl},
-                {name: 'timestamp', type:'string', value:date}
+                {name: 'timestamp', type:'string', value:date},
                 {name: 'author', type:'string', value:author}
             ],
 
