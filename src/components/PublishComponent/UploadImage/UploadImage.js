@@ -6,7 +6,7 @@ class UploadImage extends React.Component {
 		super(props);
 
 		this.state = {
-			currentImg: ""
+			currentImg: "http://localhost:3001/images/no-image.jpg"
 		}
 
 		this.saveImage = this.saveImage.bind(this)
@@ -49,7 +49,7 @@ class UploadImage extends React.Component {
 		return (
 			<div id='image-wrapper'>
 				{/*<p id='image-field' className='border-publish'>{this.props.imgSelected}</p>*/}
-				<img src={this.state.currentImg} style={{width: '200px', height:'200px'}}/>
+				<img src={this.state.currentImg} style={{height:'200px'}}/>
 					<div className='file-upload-btn'>
 						<label htmlFor="file-upload" className="btn btn-primary">
 				  			<i className="fas fa-cloud-upload-alt"></i> Upload image
