@@ -1,5 +1,5 @@
 ## Before you get started
-Follow all the steps for a complete functioning application
+Follow all the steps for a complete functional application
 #### Note
 It is possible to run and develop the application without using i3,
 excluding the article flow. [read more](#additional-information)
@@ -39,7 +39,6 @@ excluding the article flow. [read more](#additional-information)
 - Step 2: 
     - Open up a new terminal and navigate to the sub folder named 'backend' and run 'npm start',
     this will start up a local server for storing/receiving images.
-    
 
 - Step 3: 
     - In your local i3 folder navigate to the bin folder and run the following .bat files:
@@ -47,5 +46,9 @@ excluding the article flow. [read more](#additional-information)
         - elasticsearch.bat.
         - process.bat
         - search.bat
-        
+        
 ## Additional Information
+
+It is possible to start the application without running i3, however the application will not be able to load any content i.e articles, the same goes for publishing any content to the i3 database. Further development that is affiliated with articles e.g publishing and reading is not recommended. 
+    
+If you are not developing anything affiliated with image content there is no need to go through 'Running the application, step 2'
