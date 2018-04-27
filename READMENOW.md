@@ -33,11 +33,11 @@ excluding the article flow. [read more](#additional-information)
 
 - **Step 1:** 
     - Navigate to the root folder of the project using a terminal and run 'npm start',
-    this will start up a local server and automaticly run the application in your webbrowser
+    this will start up a local server and automaticly run the application in your webbrowser at http://localhost:3000
    
 - **Step 2:** 
     - Open up a new terminal and navigate to the sub folder named 'backend' and run 'npm start',
-    this will start up a local server for storing/receiving images.
+    this will start up a local server for storing/receiving images at http://localhost:3001
 
 - **Step 3:** 
     - In your local i3 folder navigate to the bin folder and run the following .bat files:
