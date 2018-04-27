@@ -2,7 +2,7 @@
 Follow all the steps for a complete functioning application
 #### Note
 It is possible to run and develop the application without using i3,
-excluding the article flow. [read more](#hej)
+excluding the article flow. [read more](#additional-information)
 
 ## Requirements    
 - Node.js    
@@ -48,4 +48,4 @@ excluding the article flow. [read more](#hej)
         - process.bat
         - search.bat
         
-## hej
+## Additional Information
